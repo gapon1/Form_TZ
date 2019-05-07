@@ -23,18 +23,18 @@ if (!empty($password) && !empty($email)) {
             $user_id = $_SESSION['id'] = $user->id;
             session_start();
             $_SESSION['userID'] = $user_id;
-            header('Location: ../list.php');
+            header('Location: ../profile.php');
 
         } else {
             //====== Wrong password ======
-            $errormessage = "Wrong email or password.";
+            $errorMessage = "Wrong email or password.";
             include "../errors.php";
             exit();
         }
 
     } else {
         //======= Wrong email ======
-        $errormessage = "Wrong email or password";
+        $errorMessage = "Wrong email or password";
         include "../errors.php";
         exit();
     }

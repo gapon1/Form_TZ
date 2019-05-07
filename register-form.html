@@ -12,7 +12,7 @@
 <body>
 <div class="form-wrapper text-center">
     <div class="messages"></div>
-    <form class="form-signin was-validated" action="scripts/register.php" method="post">
+    <form class="form-signin was-validated" enctype="multipart/form-data" action="scripts/upload-avatar.php" method="post">
         <img class="mb-4" src="assets/img/bootstrap-solid.svg" alt="" width="72" height="72">
         <h1 class="h3 mb-3 font-weight-normal">Register</h1>
         <label for="inputEmail" class="sr-only">Name</label>
@@ -22,7 +22,7 @@
         <label for="inputPassword" class="sr-only">Password</label>
         <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
         <div class="custom-file">
-            <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+            <input type="file" class="custom-file-input" name="image" id="validatedCustomFile" required>
             <label class="custom-file-label" for="validatedCustomFile">Choose file</label>
             <div class="invalid-feedback">Wrap a file for your avatar</div>
         </div>

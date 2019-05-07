@@ -1,68 +1,113 @@
 .form-wrapper {
-	width: 500px;
-	margin:150px auto 0px;
-}	
+    width: 500px;
+    margin: 150px auto 0px;
+}
 
 :root {
-  --jumbotron-padding-y: 3rem;
+    --jumbotron-padding-y: 3rem;
 }
 
 .jumbotron {
-  padding-top: var(--jumbotron-padding-y);
-  padding-bottom: var(--jumbotron-padding-y);
-  margin-bottom: 0;
-  background-color: #fff;
+    padding-top: var(--jumbotron-padding-y);
+    padding-bottom: var(--jumbotron-padding-y);
+    margin-bottom: 0;
+    background-color: #fff;
 }
+
 @media (min-width: 768px) {
-  .jumbotron {
-    padding-top: calc(var(--jumbotron-padding-y) * 2);
-    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
-  }
+    .jumbotron {
+        padding-top: calc(var(--jumbotron-padding-y) * 2);
+        padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+    }
 }
-.card-img-top{
-  height: 250px!important;
+
+.card-img-top {
+    height: 250px !important;
 }
-.error_link{
-  text-align: center;
-  font-size: 24px;
-  text-transform: uppercase;
+
+.error_link {
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
 }
-.error_link__block{
-  margin: 50px 0;
-  text-align: center;
+
+.error_link__block {
+    margin: 50px 0;
+    text-align: center;
 }
 
 
-.errorMessage .back{
-  text-align: center;
-  padding: 20px;
+.errorMessage .back {
+    text-align: center;
+    padding: 20px;
 }
-.radio_visible{
-  float: right;
-  margin: 4px 0 0 15px;
+
+.radio_visible {
+    float: right;
+    margin: 4px 0 0 15px;
 }
+
 .jumbotron p:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .jumbotron-heading {
-  font-weight: 300;
+    font-weight: 300;
 }
 
 .jumbotron .container {
-  max-width: 40rem;
+    max-width: 40rem;
 }
 
 footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 footer p {
-  margin-bottom: .25rem;
+    margin-bottom: .25rem;
 }
 
 .form-signin input, .form-signin textarea {
-  margin-bottom: 20px;
-  display: block;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/*====== Profile Card Style =========*/
+
+
+ .card {
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+     max-width: 300px;
+     margin: auto;
+     text-align: center;
+     font-family: arial;
+ }
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+button:hover, a:hover {
+    opacity: 0.7;
 }
