@@ -4,6 +4,7 @@ require_once "db.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
+    //==== Validate User Data ====
     function validate_input($data) {
         $data = trim($data);
         $data = stripslashes($data);
@@ -20,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (!empty($login) && !empty($password) && !empty($email)) {
 
-        //==== Check if user Exists in user table ======
+        //==== Check if user Exists in user table ====
         $sql_check = 'SELECT EXISTS( SELECT email FROM users WHERE email = :email)';
         $stmt_check = $pdo->prepare($sql_check);
         $stmt_check->execute([':email' => $email]);
